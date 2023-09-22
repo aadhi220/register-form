@@ -23,7 +23,7 @@ function App() {
   
   const getDetails = (e) => {
     e.preventDefault();
-    if (user && email && pass && cpass) {
+    if (user && email && pass && cpass && pass===cpass) {
       alert(`    Name          : ${user} 
       email         : ${email}
       password  : ${cpass}`);
