@@ -30,7 +30,7 @@ function App() {
     } else {
       alert("please fill completely!!");
     }
-  };
+  }
   const confirmPass = (e) => {
     const { value } = e.target;
 
@@ -86,14 +86,14 @@ function App() {
             type="text"
             value={user || ""}
             onChange={(e) => setUser(e.target.value)}
-            id="standard-basic"
+            
             label="Name"
             variant="standard"
           />
           <TextField
             type="email"
-            id="standard-basic"
-            error={true}
+            
+            
             value={email || ""}
             onChange={(e) => validateEmail(e)}
             label="Email"
@@ -110,7 +110,7 @@ function App() {
             value={pass || ""}
             error={pserror ? true : false}
             onChange={(e) => validatePass(e)}
-            FormHelperText="sas"
+      
             endAdornment={
               <InputAdornment position="end">
                 <IconButton
@@ -127,9 +127,9 @@ function App() {
         </FormControl>
       
            <FormControl sx={{  }} variant="standard">
-          <InputLabel htmlFor="standard-adornment-password">Confirm Password</InputLabel>
+          <InputLabel htmlFor="standard-adornment-cpassword">Confirm Password</InputLabel>
           <Input
-            id="standard-adornment-password"
+            id="standard-adornment-cpassword"
             type={showPassword ? 'text' : 'password'}
             value={cpass || ""}
             error={perror ? true : false}
@@ -155,7 +155,8 @@ function App() {
             Sign up
           </Button>
           <p className="end">
-            Have an Account? <a style={{textDecoration:'none',color:'blue'}} href="">Login in</a>{" "}
+            Have an Account? <a style={{textDecoration:'none',color:'blue'}} href="#">Login in</a>
+            
           </p>
         </div>
       </form>

@@ -17,9 +17,6 @@ img {
   position: absolute;
   width: 70px;
   height: 75px;
- 
-
-  
   top: .8rem;
   border-radius: 180px;
   overflow: hidden;
@@ -52,13 +49,7 @@ img {
   top: 9rem;
   opacity: .6;
 }
-.hr-line {  
-  
-  border: 1px solid black;
-  width: 100%;
-  position: absolute;
-  top: 4rem;
-}
+
 .input-field{
   
   display: flex;
@@ -69,16 +60,6 @@ img {
   
 }
 
-.MuiOutlinedInput-notchedOutline :hover{
-
-  
-}
-
-.btn {
-  padding: 1rem;
-  border-radius: 5rem;
-  background-color:;
-}
 .end {
   text-align: center;
   opacity: .7;
